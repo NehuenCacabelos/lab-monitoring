@@ -1,0 +1,12 @@
+# Sistema operativo y editores
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Datos y logs
+*.log
+data/
+
+# Variables de entorno
+.env
