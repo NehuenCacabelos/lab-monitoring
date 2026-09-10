@@ -11,7 +11,7 @@ Proyecto de infraestructura como código (**IaC**) para el monitoreo de métrica
 
 ## 📸 Vista Previa del Dashboard
 
-![Grafana Node Exporter Dashboard](screenshots/image_e30c07.png)
+![Grafana Node Exporter Dashboard](screenshots/grafana-dashboard.png)
 
 ---
 
