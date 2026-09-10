@@ -51,19 +51,6 @@ Toda la plataforma se aprovisiona automáticamente al iniciar el entorno, sin re
 
 ---
 
-## 🔍 Diagnóstico y Solución de Problemas (Troubleshooting)
-
-Durante la fase de despliegue inicial se diagnosticaron y solucionaron los siguientes errores de sintaxis:
-
-1. **Prometheus (`prometheus.yml`):**
-   * *Error:* Errata de tipeo `scrape_internal`.
-   * *Solución:* Se corrigió al parámetro oficial de Prometheus `scrape_interval`.
-2. **Node Exporter (`compose.yml`):**
-   * *Error:* Flags mal formateados usando barras (`--path/procfs`).
-   * *Solución:* Se ajustaron los flags a la sintaxis oficial apuntando al sistema de archivos del host (`--path.procfs=/host/proc`).
-
----
-
 ## 📂 Estructura del Proyecto
 
 ```text
@@ -80,7 +67,7 @@ Durante la fase de despliegue inicial se diagnosticaron y solucionaron los sigui
 │   └── dashboards/
 │       └── node-exporter.json
 ├── screenshots/
-│   └── image_e30c07.png
+│   └── imagenes
 └── .gitignore
 ```
 
