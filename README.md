@@ -97,8 +97,8 @@ El despliegue no requiere pasos manuales en interfaces gráficas; arranca 100% o
 ├── scripts/
 │   └── load-test.sh
 ├── screenshots/
-│   ├── grafana-dashboard.png
-│   └── nginx-dashboard.png
+│   ├── nginx-metrics.png
+│   └── cluster-metrics.png
 └── .gitignore
 ```
 
