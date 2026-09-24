@@ -110,7 +110,7 @@ El despliegue no requiere pasos manuales en interfaces gráficas; arranca 100% o
 ### 2. Despliegue
 ```bash
 # Clonar el repositorio
-git clone [https://github.com/NehuenCacabelos/lab-monitoring.git](https://github.com/NehuenCacabelos/lab-monitoring.git)
+git clone https://github.com/NehuenCacabelos/lab-monitoring.git
 cd lab-monitoring
 
 # Levantar toda la infraestructura en segundo plano
