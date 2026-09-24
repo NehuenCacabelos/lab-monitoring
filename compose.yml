@@ -78,7 +78,7 @@ services:
     restart: unless-stopped
     command:
       # Le indicamos de dónde lee el stub_status de Nginx
-      - -nginx.scrape-uri=http://nginx:80/stub_status
+      - -nginx.scrape-uri=http://nginx:8081/stub_status
     expose:
       - 9113
     depends_on:
