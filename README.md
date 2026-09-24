@@ -15,12 +15,12 @@ El stack utiliza **Nginx** como punto de entrada único (*Reverse Proxy* y *Load
 ## 📸 Vistas Previas del Monitoreo
 
 ### 1. Tráfico y Rendimiento de Nginx (Caja Blanca)
-Monitoreo de conexiones activas, estados de lectura/escritura y tasa de peticiones procesadas por el balanceador en tiempo real.
-![Nginx Exporter Dashboard](screenshots/nginx-dashboard.png)
+Monitoreo de conexiones activas, estados del worker y tasa de peticiones atendidas por el balanceador.
+![Nginx Exporter Dashboard](screenshots/nginx-metrics.png)
 
 ### 2. Recursos del Host y Consumo por Contenedor (Caja Negra)
-Métricas de CPU, memoria RAM, I/O y saturación individual de los contenedores Docker en ejecución.
-![Grafana Node Exporter Dashboard](screenshots/grafana-dashboard.png)
+Métricas de CPU, memoria RAM y saturación individual de los contenedores Docker en ejecución.
+![Grafana Node Exporter Dashboard](screenshots/cluster-metrics.png)
 
 ---
 
