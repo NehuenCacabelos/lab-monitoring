@@ -121,7 +121,6 @@ docker compose up -d
 * **Grafana:** `http://localhost` *(Credenciales por defecto: `admin` / `admin`)*
 * **Prometheus:** `http://localhost:9090`
 * **Backend Balanceado:** `http://localhost:8080`
-* **Status Interno de Nginx:** `http://localhost/stub_status`
 
 ---
 
