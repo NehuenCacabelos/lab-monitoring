@@ -5,14 +5,12 @@ services:
     restart: unless-stopped
     ports:
       - "80:80"     # Grafana a través de Nginx
-      - "9090:9090" # Prometheus a través de Nginx
-      - "8080:8080" # LoadBalancer
+      - "9090:9090" # Prometheus a través de Nginx     
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
     depends_on:
       - grafana
       - prometheus
-      - backend
 
   prometheus:
     image: prom/prometheus:latest
@@ -63,26 +61,6 @@ services:
       - /dev/disk/:/dev/disk:ro
     ports:
       - "8080"
-
-  backend:
-    image: hashicorp/http-echo:latest
-    command: ["-listen=:5678", "-text=Hola desde el backend"]
-    deploy:
-      replicas: 3
-    expose:
-      - 5678
-
-  nginx-exporter:
-    image: nginx/nginx-prometheus-exporter:latest
-    container_name: nginx-exporter
-    restart: unless-stopped
-    command:
-      # Le indicamos de dónde lee el stub_status de Nginx
-      - -nginx.scrape-uri=http://nginx:8081/stub_status
-    expose:
-      - 9113
-    depends_on:
-      - nginx
 
 volumes:
   prometheus_data:
