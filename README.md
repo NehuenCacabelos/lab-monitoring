@@ -91,7 +91,7 @@ El entorno se inicia completamente operativo sin requerir intervención manual e
 ### 2. Despliegue
 ```bash
 # Clonar el repositorio
-git clone [https://github.com/NehuenCacabelos/lab-monitoring.git](https://github.com/NehuenCacabelos/lab-monitoring.git)
+git clone https://github.com/NehuenCacabelos/lab-monitoring.git
 cd lab-monitoring
 
 # Levantar toda la infraestructura en segundo plano
